@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Con Grid</title>
+</head>
+<style>
+    
+    .container{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 10px 20px;
+    }
+    .header{
+        background-color: rgb(202, 174, 255);
+        grid-column: 1/-1;
+        text-align: center;
+        padding: 20px;
+        color: aliceblue;
+    }
+    .sidebar{
+        background-color: rgb(139, 50, 223);
+        grid-row-end: span 2;
+        text-align: center;
+        padding: 30px;
+        color: aliceblue;
+    }
+    .content{
+        background-color: rgb(207, 157, 255);
+        text-align: center;
+        padding: 40px;
+        color: aliceblue;
+    }
+    .footer{
+        background-color: rgb(62, 9, 97);
+        text-align: center;
+        color: aliceblue;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <header class="header">
+            <p>Este es el HEADER</p>
+        </header>
+        <main class="content">
+            <p>Este es el MAIN</p>
+        </main>
+        <div class="sidebar">
+            <p>Este es el SIDEBAR</p>
+        </div>
+        <footer class="footer">
+            <p>Este es el FOOTER</p>
+        </footer>
+    </div>
+</body>
+</html>
